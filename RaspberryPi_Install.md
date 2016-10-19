@@ -22,6 +22,10 @@
     https://www.raspberrypi.org/downloads/raspbian/
 
     https://sourceforge.net/projects/win32diskimager/
+    
+    4.百度云下载：
+    
+    链接：http://pan.baidu.com/s/1o7T7RZW 密码：g3bp
 
 安装步骤
 ----
