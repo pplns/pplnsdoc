@@ -1,0 +1,6 @@
+{
+  "name": "pplnsdoc",
+  "tagline": "本项目用于管理pplns项目中所有文档。",
+  "body": "**Git global setup**\r\n\r\n-------\r\ngit config --global user.name \"neal.zhang\"\r\n\r\ngit config --global user.email \"Loong@pplns.com\"\r\n\r\n-------\r\n**Create a new repository**\r\n\r\n------\r\nmkdir bitmonitor\r\n\r\ncd bitmonitor\r\n\r\ngit init\r\n\r\ntouch README.md\r\n\r\ngit add README.md\r\n\r\ngit commit -m \"first commit\"\r\n\r\ngit remote add origin git@github.com:pplns/pplnsdoc.git\r\n\r\ngit push -u origin master\r\n\r\n------\r\n**Push an existing Git repository**\r\n\r\n------\r\ncd existing_git_repo\r\n\r\ngit remote add origin git@github.com:pplns/pplnsdoc.git\r\n\r\ngit push -u origin master\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
