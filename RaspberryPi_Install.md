@@ -5,13 +5,21 @@
 ***Email***: Loong@pplns.com
 
 ===
+目录
+----
+目录
+----
+*   [准备工作] (#准备工作)
+*   [安装步骤] (#安装步骤)
+*   [登录系统] (#登录系统)
+
 准备工作
 ----
-    硬件准备：树莓派3、32G内存卡、读卡器、电源线、电源插头。
+    1.硬件准备：树莓派3、32G内存卡、读卡器、电源线、电源插头。
 
-    软件准备：Win32DiskImager-0.9.5-install.exe、2016-09-23-raspbian-jessie.img
+    2.软件准备：Win32DiskImager-0.9.5-install.exe、2016-09-23-raspbian-jessie.img
 
-    下载链接：
+    3.下载链接：
 
     https://www.raspberrypi.org/downloads/raspbian/
 
@@ -25,7 +33,7 @@
 
     3.待出现Write Successful弹框，证明写入镜像成功，至此树莓派系统安装完毕。
 
-登陆系统
+登录系统
 ----
     1.将内存卡从电脑正确弹出，安装至树莓派。
 
