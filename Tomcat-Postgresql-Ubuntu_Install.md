@@ -27,7 +27,9 @@ tomcat-postgresql架构项目部署文档
     *   postgresql-9.4.1211.jar
     *   pplns_init.sql
     *   postgresql-9.4.9-2-linux-x64.run
-
+    下载链接：
+    链接：http://pan.baidu.com/s/1c284jL2 密码：09wj
+    
 java环境配置
 --------------
     将jdk-8u60-linux-x64.tar.gz解压到/opt目录下。
