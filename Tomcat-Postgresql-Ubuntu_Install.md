@@ -174,3 +174,20 @@ Tomcat配置
    
     安装过程请参考windows版本安装
 
+补充---Centos 6.5环境下postgresql的安装
+------
+在线下载
+
+    yum install postgresql-server
+    
+初始化
+
+    service postgresql initdb
+    
+开启不同级别下的服务
+
+    chkconfig postgresql on
+
+其他
+
+    其他步骤请参考以上关于Ubuntu环境下的操作
