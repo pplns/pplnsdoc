@@ -16,7 +16,7 @@ tomcat-postgresql架构项目部署文档
 *   [Tomcat配置] (#Tomcat配置)
 *   [常用操作] (#常用操作)
 *   [异常处理]  (#异常处理)
-
+*   [补充---Centos 6.5环境下postgresql的安装] (#补充---Centos 6.5环境下postgresql的安装)
 准备工作
 ---------
     部署项目之前请确保你已经有以下文件：
