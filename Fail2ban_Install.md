@@ -137,6 +137,8 @@ socket = /var/run/fail2ban/fail2ban.sock #socket的位置(默认即可)
 
 * jail.conf
 
+全局配置：
+
 ```
 [DEFAULT]
 #全局变量
@@ -145,7 +147,11 @@ bantime = 600      #屏蔽时间，单位秒，该bantime将被[ssh-iptables]中
 findtime = 600      #发现时间，在此期间内重试超过规定次数，会激活fail2ban
 maxretry = 3      #默认尝试次数
 backend = auto      #日志修改检测机制
+```
 
+ssh监狱：
+
+```
 [sshd]
 enabled = true
 filter = sshd
@@ -155,8 +161,95 @@ backend = %(sshd_backend)s
 
 ```
 
+centos系统下apache监狱:
+
+```
+# 检测密码认证失败
+[apache]
+enabled =true
+port = http,https
+filter = apache-auth
+logpath =/var/log/httpd/*error_log
+maxretry = 6
+# 检测抓取邮件地址的爬虫
+[apache-badbots]
+enabled = true
+port = http,https
+filter = apache-badbots
+logpath = /var/log/httpd/*access_log
+bantime = 172800
+maxretry = 1
+# 检测漏洞和 PHP 脆弱性扫描
+[apache-noscript]
+enabled = true
+port = http,https
+filter = apache-noscript
+logpath = /var/log/httpd/*error_log
+maxretry = 6
+# 检测 Apache 溢出攻击
+[apache-overflows]
+enabled = true
+port = http,https
+filter = apache-overflows
+logpath = /var/log/httpd/*error_log
+maxretry = 2
+# 检测在服务器寻找主目录的尝试
+[apache-nohome]
+enabled = true
+port = http,https
+filter = apache-nohome
+logpath = /var/log/httpd/*error_log
+maxretry = 2
+# 检测执行不存在的脚本的企图
+# 这些都是流行的网站服务程序
+# 如：webmail， phpMyAdmin，WordPress
+port = http,https
+filter = apache-botsearch
+logpath = /var/log/httpd/*error_log
+maxretry = 2
+```
+
+ubuntu系统下apache监狱:
+
+```
+# 检测密码认证失败
+[apache]
+enabled =true
+port = http,https
+filter = apache-auth
+logpath =/var/log/apache*/*error.log
+maxretry = 6
+# 检测漏洞和 PHP 脆弱性扫描
+[apache-noscript]
+enabled = true
+port = http,https
+filter = apache-noscript
+logpath = /var/log/apache*/*error.log
+maxretry =6
+# 检测 Apache 溢出攻击
+[apache-overflows]
+enabled =true
+port = http,https
+filter = apache-overflows
+logpath =/var/log/apache*/*error.log
+maxretry = 2
+# 检测在服务器寻找主目录的尝试
+[apache-nohome]
+enabled = true
+port = http,https
+filter = apache-nohome
+logpath = /var/log/apache*/*error.log
+maxretry =2
+```
+
 ****
 注意事项
 ----
 
 从fail2ban 0.10.0版本之后，开始支持匹配IPv6地址
+
+
+
+
+
+
