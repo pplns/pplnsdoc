@@ -19,6 +19,7 @@ fail2ban的安装说明
     *   [ubuntu14.04] (#ubuntu14.04)
 *   [配置说明] (#配置说明)
 *   [注意事项] (#注意事项)
+*   [常用操作] (#常用操作)
 
 ****
 概述
@@ -248,8 +249,20 @@ maxretry =2
 
 从fail2ban 0.10.0版本之后，开始支持匹配IPv6地址
 
+****
+常用操作
+----
 
+查询限制列表：
 
+iptables -L --line-numbers 或 service iptables status
 
+```
+Chain f2b-sshd (1 references)
+num  target     prot opt source               destination         
+1    REJECT     all  --  10.11.22.53          anywhere            reject-with icmp-port-unreachable 
+2    RETURN     all  --  anywhere             anywhere  
+```
+解除限制：
 
-
+iptables -D f2b-sshd 1
