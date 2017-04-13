@@ -9,9 +9,9 @@ Ubuntu 16.04 LTS install TeamViewer
 ****
 Links
 ----
-*   [Preparation] (#Preparation)
-*   [Install] (#Install)
-*   [Launch] (#Launch)
+*  [Preparation] (#Preparation)
+*  [Install] (#Install)
+*  [Launch] (#Launch)
 
 ****
 Preparation
