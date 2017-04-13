@@ -11,13 +11,13 @@ tomcat-postgresql架构项目部署文档
 ***
 目录
 ----
-*   [准备工作] (#准备工作)
-*   [java环境配置] (#java环境配置)
-*   [postgresql数据库安装与初始化] (#postgresql数据库安装与初始化)
-*   [Tomcat配置] (#Tomcat配置)
-*   [常用操作] (#常用操作)
-*   [异常处理]  (#异常处理)
-*   [补充---Centos 6.5环境下postgresql的安装] (#补充---Centos 6.5环境下postgresql的安装)
+* [准备工作] (#准备工作)
+* [java环境配置] (#java环境配置)
+* [postgresql数据库安装与初始化] (#postgresql数据库安装与初始化)
+* [Tomcat配置] (#Tomcat配置)
+* [常用操作] (#常用操作)
+* [异常处理]  (#异常处理)
+* [补充---Centos 6.5环境下postgresql的安装] (#补充---Centos 6.5环境下postgresql的安装)
 
 ****
 准备工作
