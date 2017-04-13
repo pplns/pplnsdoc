@@ -7,22 +7,24 @@ Ubuntu 16.04 LTS install TeamViewer
 ***Email***: Loong@pplns.com
 
 ****
-Links
+目录
 ----
-*  [Preparation] (#Preparation)
-*  [Install] (#Install)
-*  [Launch] (#Launch)
+*  [准备工作] (#准备工作)
+*  [安装] (#安装)
+*  [运行] (#运行)
 
 ****
-Preparation
+准备工作
 ----
+
     Download the deb install package of Ubuntu from the following link:
 
     http://www.teamviewer.com/en/download/linux/
 
 ****
-Install
+安装
 ----
+
     CD the deb package dir,then excute the following command:
 
     sudo dpkg --add-architecture i386
@@ -34,6 +36,7 @@ Install
     sudo dpkg -i teamviewer*.deb
 
 ****
-Launch
+运行
 ------
+
     sudo teamviewer
