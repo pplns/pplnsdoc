@@ -1,16 +1,17 @@
 tomcat-postgresql架构项目部署文档
-=======
+===
 
+***
 **Author**: Neal Zhang
 
 **Email**: Loong@pplns.com
 
 此文档用于说明tomcat-postgresql架构项目在ubuntu环境下的部署工作
 
-======
+***
 目录
-------
-*   [准备工作] (#准备工作)
+----
+*   [准备工作] (#准备工作)
 *   [java环境配置] (#java环境配置)
 *   [postgresql数据库安装与初始化] (#postgresql数据库安装与初始化)
 *   [Tomcat配置] (#Tomcat配置)
@@ -18,8 +19,9 @@ tomcat-postgresql架构项目部署文档
 *   [异常处理]  (#异常处理)
 *   [补充---Centos 6.5环境下postgresql的安装] (#补充---Centos 6.5环境下postgresql的安装)
 
+****
 准备工作
----------
+----
     部署项目之前请确保你已经有以下文件：
 
     *   apache-tomcat-8.5.6.tar.gz
@@ -30,7 +32,8 @@ tomcat-postgresql架构项目部署文档
     *   postgresql-9.4.9-2-linux-x64.run
     下载链接：
     链接：http://pan.baidu.com/s/1c284jL2 密码：09wj
-    
+ 
+****
 java环境配置
 --------------
     将jdk-8u60-linux-x64.tar.gz解压到/opt目录下。
@@ -43,6 +46,7 @@ java环境配置
 
     JAVA_HOME="/opt/jdk1.8.0_60"
 
+****
 postgresql数据库安装与初始化
 ----------------------------------
 postgresql安装
@@ -88,6 +92,7 @@ postgresql安装
 
     \i /home/pplns/pplns_init.sql
 
+****
 Tomcat配置
 ------
 解压apache-tomcat-8.5.6.tar.gz至/opt目录下，并命名为tomcat8
@@ -120,7 +125,8 @@ Tomcat配置
 
     ../bin/shutdown.sh
     ../bin/startup.sh
-   
+
+****
 常用操作
 ------
 启动tomcat
@@ -139,6 +145,7 @@ Tomcat配置
 
     本机IP:8080/pplns
 
+****
 异常处理
 ------
 如果apt-get install postgresql-9.4失败，则尝试以下解决方案
@@ -175,6 +182,7 @@ Tomcat配置
    
     安装过程请参考windows版本安装
 
+****
 补充---Centos 6.5环境下postgresql的安装
 ------
 在线下载
