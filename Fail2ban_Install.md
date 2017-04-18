@@ -157,8 +157,10 @@ ssh监狱：
 enabled = true
 filter = sshd
 port = ssh
-logpath = %(sshd_log)s
-backend = %(sshd_backend)s
+# Debian 系的发行版
+logpath =/var/log/auth.log
+# Red Hat 系的发行版
+logpath =/var/log/secure
 
 ```
 
